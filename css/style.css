@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
+:root {
+  /* headings */
+  --h1-size: 40px;
+  --h2-size: 26px;
+  --h3-size: 20px;
+  --h4-size: 22px;
+  --h5-size: 18px;
+  --h6-size: 16px;
+  /* paragraphs */
+  --para1-size: 16px;
+  --para2-size: 14px;
+  --para3-size: 12px;
+  --para4-size: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+  :root {
+    /* headings */
+    --h1-size: 29px;
+    --h2-size: 20px;
+    --h3-size: 17px;
+    --h4-size: 16px;
+    --h5-size: 16px;
+    --h6-size: 16px;
+    /* paragraphs */
+    --para1-size: 14px;
+    --para2-size: 12px;
+    --para3-size: 10px;
+    --para4-size: 8px;
+  }
+  .first {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .second {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+/* headings */
+/* paragraphs */
+/* colors */
+/* buttons */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ========global in all projects */
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+h4 {
+  font-size: var(--h4-size);
+}
+
+h5 {
+  font-size: var(--h5-size);
+}
+
+h6 {
+  font-size: var(--h6-size);
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.lighter {
+  opacity: 0.6;
+}
+
+.size-16 {
+  font-size: 16px;
+}
+
+.size-14 {
+  font-size: 14px;
+}
+
+.c-primary {
+  color: #fa8072 !important;
+}
+
+.c-secondary {
+  color: #002367;
+}
+
+.c-dark {
+  color: #060019;
+}
+
+.c-white {
+  color: white !important;
+}
+
+*:focus {
+  outline: none !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.fs16 {
+  font-size: 18px;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.bg-image.big {
+  width: 150%;
+  left: -67px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.semiBold {
+  font-weight: 600;
+}
+
+.lh21 {
+  line-height: 21px;
+}
+
+.lh18 {
+  line-height: 18px;
+}
+
+.clean-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+
+.italic,
+.text-italic {
+  font-style: italic;
+}
+
+.mh-100vh {
+  min-height: 100vh;
+}
+
+.mw {
+  --w: 500;
+  max-width: calc(var(--w) * 1px);
+}
+
+.c-light {
+  color: #727272 !important;
+}
+
+.padding-top-for-menu {
+  padding-top: 120px;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+/* =======end of global in all projects ================ */
+.aw-form-group {
+  margin-bottom: 30px;
+}
+
+.aw-form-group label {
+  display: block;
+  opacity: 0.4;
+  font-size: var(--para1-size);
+  font-weight: 200;
+}
+
+.aw-form-group input,
+.aw-form-group select,
+.aw-form-group textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 0.3px #ffffff;
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  color: #ffffff;
+}
+
+.aw-form-group input:focus,
+.aw-form-group select:focus,
+.aw-form-group textarea:focus {
+  opacity: 1;
+}
+
+.primary-button {
+  font-size: var(--para1-size);
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px 34px;
+  background-color: #146bc3;
+  border: none;
+  border-radius: 6px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.primary-button.not-rounded {
+  border-radius: 8px;
+}
+
+.primary-button:hover {
+  background-color: #ffffff;
+  color: #146bc3;
+}
+
+.secondary-button {
+  font-size: var(--para1-size);
+  color: #ffffff;
+  display: inline-block;
+  padding: 20px 50px;
+  background-color: #002367;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+
+.secondary-button.not-rounded {
+  border-radius: 8px;
+}
+/*# sourceMappingURL=style.css.map */

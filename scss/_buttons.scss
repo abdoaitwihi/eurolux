@@ -1,0 +1,30 @@
+.primary-button {
+  font-size: $p1S;
+  color: $cWhite;
+  display: inline-block;
+  padding: 8px 34px;
+  background-color: #146bc3;
+  border: none;
+  border-radius: 6px;
+  transition: 0.3s;
+  &.not-rounded {
+    border-radius: 8px;
+  }
+  &:hover {
+    background-color: $cWhite;
+    color: #146bc3;
+  }
+}
+.secondary-button {
+  font-size: $p1S;
+  color: $cWhite;
+  display: inline-block;
+  padding: 20px 50px;
+  background-color: $cSecond;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 30px;
+  &.not-rounded {
+    border-radius: 8px;
+  }
+}
