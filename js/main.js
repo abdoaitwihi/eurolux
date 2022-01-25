@@ -1,20 +1,17 @@
 $(document).ready(function () {
-  /* carousel testimonials */
-  let owlExperties = $(".owl-expertieses");
-
-  owlExperties.owlCarousel({
-    screenLeft: true,
-    loop: false,
+  $(".owl-brochures").owlCarousel({
+    // loop: true,
     margin: 20,
-    center: true,
-    nav: false,
-    dots: true,
+    // center: true,
+    nav: true,
+    dots: false,
+    navText: ["<img src='assets/icons/back.svg' />", "<img src='assets/icons/back.svg' />"],
     responsive: {
       0: {
         items: 1,
       },
       600: {
-        items: 1,
+        items: 2,
       },
       1000: {
         items: 3,

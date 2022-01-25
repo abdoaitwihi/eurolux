@@ -1,18 +1,18 @@
 .primary-button {
   font-size: $p1S;
-  color: $cWhite;
+  color: $cPrimary;
   display: inline-block;
   padding: 8px 34px;
-  background-color: #146bc3;
-  border: none;
+  border: solid 1px $cPrimary;
   border-radius: 6px;
   transition: 0.3s;
   &.not-rounded {
     border-radius: 8px;
   }
   &:hover {
-    background-color: $cWhite;
-    color: #146bc3;
+    background-color: $cDark;
+    color: $cWhite;
+    border-color: $cDark;
   }
 }
 .secondary-button {
