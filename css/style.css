@@ -111,7 +111,7 @@ a:hover {
 }
 
 .c-dark {
-  color: #060019;
+  color: #1f1f1f;
 }
 
 .c-white {
@@ -205,6 +205,20 @@ body {
 }
 
 /* =======end of global in all projects ================ */
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
+header .logo {
+  max-width: 200px;
+}
+
+.outer-menu .inner-menu {
+  background-color: #1f1f1f;
+}
+
 .aw-form-group {
   margin-bottom: 30px;
 }
@@ -269,5 +283,10 @@ body {
 
 .secondary-button.not-rounded {
   border-radius: 8px;
+}
+
+.home-banner {
+  position: relative;
+  min-height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */
