@@ -1,2 +1,35 @@
 footer {
+  padding-top: 70px !important;
+  color: $cWhite;
+  h3 {
+    color: $cPrimary;
+  }
+  a {
+    color: $cWhite;
+    font-weight: 200;
+    letter-spacing: 1px;
+    &:hover {
+      color: $cWhite;
+      opacity: 0.5;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  p {
+    color: $cWhite;
+    margin: 0;
+  }
+  .part2 {
+    a,
+    p {
+      font-weight: 200;
+      //   letter-spacing: 2px;
+    }
+    a {
+      padding: 0 22px;
+    }
+  }
 }

@@ -122,10 +122,13 @@ body {
 /* =======end of global in all projects ================ */
 
 body {
-  background-color: $cDark;
+  // background-color: $cDark;
+  background-image: url("/assets/images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.section-title {
+.left-section-title {
   color: $cPrimary;
   font-size: 25px;
   margin: 0;
@@ -137,13 +140,13 @@ body {
     width: 12px;
     height: 12px;
     top: 8px;
-    left: 10%;
+    left: 15%;
     background-color: $cPrimary;
     border-radius: 50%;
   }
   &::before {
     content: "";
-    width: 10%;
+    width: 15%;
     height: 1px;
     margin-right: 32px;
     display: inline-block;
@@ -152,10 +155,44 @@ body {
   }
 }
 
+.right-section-title {
+  color: $cPrimary;
+  font-size: 25px;
+  margin: 0;
+  position: relative;
+  text-align: right;
+  padding-right: calc(32px + 15%);
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    top: 8px;
+    right: 15%;
+    background-color: $cPrimary;
+    border-radius: 50%;
+  }
+  &::after {
+    content: "";
+    width: 15%;
+    height: 1px;
+    margin-left: 32px;
+    display: inline-block;
+    background-color: $cPrimary;
+    transform: translateY(-8.5px);
+    position: absolute;
+    right: 0px;
+    display: block;
+    top: 22px;
+    left: unset;
+  }
+}
+
 .card5 {
   position: relative;
   overflow: hidden;
-  max-width: 317px;
+  max-width: 357px;
   border-radius: 6px;
   margin: auto;
   &:hover {
@@ -246,9 +283,22 @@ body {
 
 .secondary-owl {
   @extend .main-owl;
+  .owl-nav {
+    position: absolute;
+    transform: translate(0%, 0%);
+    display: flex;
+    justify-content: space-between;
+    width: unset;
+    right: 11px;
+    left: unset;
+    top: 104%;
+    [class*="owl-"] {
+      margin: 0 12px;
+    }
+  }
 }
 
 .section {
   padding-top: 70px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }

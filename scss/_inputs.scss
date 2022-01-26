@@ -23,3 +23,18 @@
   textarea {
   }
 }
+
+.input1 {
+  input,
+  select,
+  textarea {
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 1px #c6c6c6bd;
+    color: #c6c6c6;
+    width: 100%;
+    margin-bottom: 33px;
+    padding-bottom: 5px;
+    width: 100%;
+  }
+}

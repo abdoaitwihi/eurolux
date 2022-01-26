@@ -3,9 +3,15 @@ header {
   padding: 32px 111px;
   z-index: 3;
   width: 100%;
+  transition: 0.5s;
   .logo {
     max-width: 200px;
     margin-bottom: 20px;
+    transition: 0.3s;
+    height: 60px;
+  }
+  .logo-container {
+    transition: 0.3s;
   }
 }
 .outer-menu {
@@ -26,5 +32,22 @@ header {
         }
       }
     }
+  }
+}
+
+header.scrolled {
+  // padding: 0;
+  padding-top: 0;
+  // padding-bottom: 0;
+  // background-color: $cDark;
+  .logo {
+    height: 0;
+    margin-bottom: 0px;
+  }
+  .logo-container {
+    height: 0;
+  }
+  .inner-menu {
+    padding: 22px 52px;
   }
 }

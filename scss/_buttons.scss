@@ -28,3 +28,40 @@
     border-radius: 8px;
   }
 }
+
+.button2 {
+  display: inline-block;
+  min-width: 350px;
+
+  text-align: center;
+  color: white;
+  border: solid 1px $cPrimary;
+  padding: 10px;
+  border-radius: 7px;
+  transition: 0.3s;
+  img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-right: 4px;
+  }
+  &:hover {
+    color: $cDark;
+    img {
+      filter: brightness(0.5);
+    }
+    background-color: $cPrimary;
+  }
+}
+
+.button3 {
+  padding: 9px 60px;
+  color: $cDark;
+  border: solid 1px $cPrimary;
+  background-color: $cPrimary;
+  transition: 0.3s;
+  &:hover {
+    color: $cPrimary;
+    background-color: transparent;
+  }
+}
