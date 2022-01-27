@@ -13,6 +13,12 @@ header {
   .logo-container {
     transition: 0.3s;
   }
+  @media screen and (max-width: 992px) {
+    .outer-menu {
+      display: none;
+    }
+    display: none;
+  }
 }
 .outer-menu {
   .inner-menu {
@@ -49,5 +55,46 @@ header.scrolled {
   }
   .inner-menu {
     padding: 22px 52px;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $cDark;
+  z-index: 33;
+  width: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  ul {
+    justify-content: space-between;
+    flex-direction: column;
+    li {
+      margin-bottom: 20px !important;
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+  &.opened {
+    width: 100%;
+  }
+}
+.mobile-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $cDark;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 22px;
+  display: none;
+  z-index: 3;
+
+  @media screen and (max-width: 992px) {
+    display: flex;
   }
 }

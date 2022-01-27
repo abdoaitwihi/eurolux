@@ -10,8 +10,22 @@ $(document).ready(function () {
     }
   });
 
+  /* cloning the menu */
+
+  $(".outer-menu").clone().appendTo(".mobile-menu");
+
+  /* mobile menu */
+  $(".aw-menu-toggler").click(function (e) {
+    e.preventDefault();
+    $(".mobile-menu").addClass("opened");
+  });
+  $(".close-menu").click(function (e) {
+    e.preventDefault();
+    $(".mobile-menu").removeClass("opened");
+  });
+
   $(".owl-brochures").owlCarousel({
-    // loop: true,
+    loop: true,
     margin: 20,
     // center: true,
     nav: true,
@@ -30,7 +44,7 @@ $(document).ready(function () {
     },
   });
   $(".owl-full-space").owlCarousel({
-    // loop: true,
+    loop: true,
     margin: 20,
     // center: true,
     nav: true,
