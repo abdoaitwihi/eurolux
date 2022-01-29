@@ -282,7 +282,7 @@ body {
   left: unset;
 }
 
-.card5, .card6 {
+.card5, .card6, .card7 {
   position: relative;
   overflow: hidden;
   max-width: 357px;
@@ -290,12 +290,12 @@ body {
   margin: auto;
 }
 
-.card5:hover img, .card6:hover img {
+.card5:hover img, .card6:hover img, .card7:hover img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.card5 img, .card6 img {
+.card5 img, .card6 img, .card7 img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   height: 347px;
@@ -306,7 +306,7 @@ body {
      object-position: center;
 }
 
-.card5 .details, .card6 .details {
+.card5 .details, .card6 .details, .card7 .details {
   position: absolute;
   bottom: 0;
   display: -webkit-box;
@@ -326,7 +326,7 @@ body {
   background: linear-gradient(to bottom, transparent, black);
 }
 
-.card5 .details h3, .card6 .details h3 {
+.card5 .details h3, .card6 .details h3, .card7 .details h3 {
   color: #ffffff;
   font-size: var(--para1-size);
   margin: 0;
@@ -335,13 +335,13 @@ body {
   padding-right: 6px;
 }
 
-.card5 .details p, .card6 .details p {
+.card5 .details p, .card6 .details p, .card7 .details p {
   margin: 0;
   color: #ffffff;
   font-size: 14px;
 }
 
-.card5 .details a, .card6 .details a {
+.card5 .details a, .card6 .details a, .card7 .details a {
   color: #d9be02;
   font-size: 14px;
 }
@@ -527,13 +527,13 @@ body {
   font-weight: 200;
 }
 
-.card5.details-hidden .details, .details-hidden.card6 .details {
+.card5.details-hidden .details, .details-hidden.card6 .details, .details-hidden.card7 .details {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 0;
 }
 
-.card5.details-hidden:hover .details, .details-hidden.card6:hover .details {
+.card5.details-hidden:hover .details, .details-hidden.card6:hover .details, .details-hidden.card7:hover .details {
   opacity: 1;
 }
 
@@ -565,6 +565,12 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 500px) {
+  .card6 {
+    max-width: 330px;
+  }
+}
+
 .card6 .details {
   padding: 14px;
 }
@@ -586,6 +592,39 @@ body {
   right: 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.card7 {
+  height: 412px;
+  width: 100%;
+  max-width: unset;
+}
+
+.card7 .details {
+  padding: 14px;
+}
+
+.card7 .details h3 {
+  font-size: 13px;
+}
+
+.card7 .details::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 8px;
+  right: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card7 img {
+  height: 100%;
 }
 
 .products-outer {
@@ -652,6 +691,102 @@ body {
 
 .social-media-icon:hover {
   background-color: #d9be02;
+}
+
+.product-details {
+  padding-top: 34px;
+}
+
+.product-details h2 {
+  color: #d9be02;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.product-details h3 {
+  color: #ffffff;
+  font-size: 17px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.product-details .product-description p {
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.product-details ul.specifications {
+  margin: 0;
+  padding-left: 15px;
+  color: #ffffff;
+  font-weight: 300;
+  list-style: none;
+}
+
+.product-details ul.specifications span {
+  color: #d9be02;
+  margin-right: 16px;
+}
+
+.product-details ul.specifications li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #d9be02;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+.product-images img {
+  border-radius: 8px;
+}
+
+.product-images .main-image img {
+  height: 315px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.product-images .preview-images {
+  margin-top: 12px;
+}
+
+.product-images .preview-images img {
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.product-images .preview-images img:not(:last-child) {
+  margin-right: 12px;
+}
+
+.single-ref-image {
+  height: 412px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.single-ref-image:hover {
+  opacity: 0.5;
 }
 
 header {

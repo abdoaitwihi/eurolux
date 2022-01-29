@@ -412,6 +412,9 @@ body {
   height: 230px;
   max-width: 230px;
   margin-bottom: 30px;
+  @media screen and (max-width: 500px) {
+    max-width: 330px;
+  }
   .details {
     padding: 14px;
     h3 {
@@ -430,6 +433,34 @@ body {
     bottom: 8px;
     right: 8px;
     transition: 0.3s;
+  }
+}
+.card7 {
+  @extend .card5;
+  height: 412px;
+  width: 100%;
+  max-width: unset;
+  .details {
+    padding: 14px;
+    h3 {
+      font-size: 13px;
+    }
+  }
+  .details::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("/assets/icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 8px;
+    right: 8px;
+    transition: 0.3s;
+  }
+  img {
+    height: 100%;
   }
 }
 
@@ -478,5 +509,82 @@ body {
   }
   &:hover {
     background-color: $cPrimary;
+  }
+}
+
+.product-details {
+  padding-top: 34px;
+  h2 {
+    color: $cPrimary;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  h3 {
+    color: $cWhite;
+    font-size: 17px;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .product-description {
+    p {
+      font-weight: 300;
+      color: $cWhite;
+    }
+  }
+  ul.specifications {
+    margin: 0;
+    padding-left: 15px;
+    color: $cWhite;
+    font-weight: 300;
+    span {
+      color: $cPrimary;
+      margin-right: 16px;
+    }
+    list-style: none;
+    li::before {
+      content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: $cPrimary; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+  }
+}
+
+.product-images {
+  img {
+    border-radius: 8px;
+  }
+  .main-image img {
+    height: 315px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .preview-images {
+    margin-top: 12px;
+    img {
+      height: 100px;
+      // width: 100%;
+      object-fit: cover;
+      object-position: center;
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+.single-ref-image {
+  height: 412px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+  opacity: 1;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
   }
 }
