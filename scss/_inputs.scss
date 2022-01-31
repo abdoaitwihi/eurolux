@@ -37,4 +37,9 @@
     padding-bottom: 5px;
     width: 100%;
   }
+  input[type="checkbox"] {
+    margin: 0;
+    display: inline;
+    width: unset;
+  }
 }

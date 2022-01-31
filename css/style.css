@@ -651,6 +651,8 @@ body {
   background-color: black;
   -webkit-box-shadow: 0px -1px 15px #00000038;
           box-shadow: 0px -1px 15px #00000038;
+  -webkit-box-shadow: 0px 1px 15px #d9be0221;
+          box-shadow: 0px 1px 15px #d9be0221;
 }
 
 .contact-form-container .button2 {
@@ -787,6 +789,50 @@ body {
 
 .single-ref-image:hover {
   opacity: 0.5;
+}
+
+.clients img {
+  height: 130px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  margin: auto;
+}
+
+.suppliers-logos img {
+  height: 130px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  margin: auto;
+}
+
+.suppliers-list {
+  background-color: black;
+  list-style: none;
+  padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+
+.suppliers-list li {
+  color: #434343;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.suppliers-list li:hover {
+  opacity: 0.3s;
+  color: #d9be02;
+}
+
+.suppliers-list li.active {
+  color: #d9be02;
 }
 
 header {
@@ -965,6 +1011,12 @@ header.scrolled .inner-menu {
   margin-bottom: 33px;
   padding-bottom: 5px;
   width: 100%;
+}
+
+.input1 input[type="checkbox"] {
+  margin: 0;
+  display: inline;
+  width: unset;
 }
 
 footer {
