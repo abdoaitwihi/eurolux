@@ -835,6 +835,12 @@ body {
   color: #d9be02;
 }
 
+body,
+div[data-aos*=""],
+header {
+  overflow-x: hidden;
+}
+
 header {
   position: fixed;
   padding: 32px 111px;
@@ -968,6 +974,10 @@ header.scrolled .inner-menu {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.logo-mobile {
+  width: 178px;
 }
 
 .aw-form-group {

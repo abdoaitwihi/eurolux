@@ -623,3 +623,9 @@ body {
     color: $cPrimary;
   }
 }
+
+body,
+div[data-aos*=""],
+header {
+  overflow-x: hidden;
+}
