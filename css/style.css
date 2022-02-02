@@ -835,9 +835,7 @@ body {
   color: #d9be02;
 }
 
-body,
-div[data-aos*=""],
-header {
+body {
   overflow-x: hidden;
 }
 
