@@ -1,0 +1,122 @@
+/* ========global in all projects */
+h1 {
+  font-size: $h1S;
+}
+h2 {
+  font-size: $h2S;
+}
+h3 {
+  font-size: $h3S;
+}
+h4 {
+  font-size: $h4S;
+}
+h5 {
+  font-size: $h5S;
+}
+h6 {
+  font-size: $h6S;
+}
+.fs14 {
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.lighter {
+  opacity: 0.6;
+}
+.size-16 {
+  font-size: 16px;
+}
+.size-14 {
+  font-size: 14px;
+}
+.c-primary {
+  color: $cPrimary !important;
+}
+.c-secondary {
+  color: $cSecond;
+}
+.c-dark {
+  color: $cDark;
+}
+.c-white {
+  color: white !important;
+}
+
+*:focus {
+  outline: none !important;
+  transition: 0.3s;
+}
+.bold {
+  font-weight: bold;
+}
+
+.fs16 {
+  font-size: 18px;
+}
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+  object-position: center;
+  &.big {
+    width: 150%;
+    left: -67px;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+.bg-white {
+  background-color: white;
+}
+.semiBold {
+  font-weight: 600;
+}
+.lh21 {
+  line-height: 21px;
+}
+.lh18 {
+  line-height: 18px;
+}
+.clean-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: unset !important;
+}
+.italic,
+.text-italic {
+  font-style: italic;
+}
+.mh-100vh {
+  min-height: 100vh;
+}
+
+.mw {
+  --w: 500;
+  max-width: calc(var(--w) * 1px);
+}
+.c-light {
+  color: #727272 !important;
+}
+
+.padding-top-for-menu {
+  padding-top: 120px;
+}
+.font-light {
+  font-weight: 300;
+}
+/* =======end of global in all projects ================ */

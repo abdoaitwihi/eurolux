@@ -1,0 +1,13 @@
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  .logo {
+    max-width: 200px;
+  }
+}
+.outer-menu {
+  .inner-menu {
+    background-color: $cDark;
+  }
+}
