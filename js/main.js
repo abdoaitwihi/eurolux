@@ -21,4 +21,5 @@ $(document).ready(function () {
       },
     },
   });
+  $(".inner-menu").clone().removeClass("desktop").appendTo(".mobile-menu");
 });
