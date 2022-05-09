@@ -1,43 +1,53 @@
 header {
-  // position: fixed;
-  z-index: 3;
-  width: 100%;
-  .logo {
-    max-width: 200px;
-  }
-  padding: 12px 0;
+    // position: fixed;
+    z-index: 3;
+    width: 100%;
+    .logo {
+        max-width: 200px;
+    }
+    padding: 12px 0;
 }
 .outer-menu {
-  .inner-menu {
-    // background-color: $cDark;
-  }
+    .inner-menu {
+        // background-color: $cDark;
+    }
 }
 .menu-toggler {
-  color: $cDark;
+    color: $cDark;
 }
 .inner-menu ul {
-  list-style: none;
-  padding: 0;
-  li a {
-    padding: 5px 12px;
-    color: $cDark;
-    text-transform: uppercase;
-    &:last-child {
-      @media screen and (min-width: 992px) {
-        padding-right: 0 !important;
-      }
+    list-style: none;
+    padding: 0;
+    li a {
+        padding: 5px 12px;
+        color: $cDark;
+        text-transform: uppercase;
+        &:last-child {
+            @media screen and (min-width: 992px) {
+                padding-right: 0 !important;
+            }
+        }
+        &:first-child {
+            @media screen and (min-width: 992px) {
+                padding-left: 0 !important;
+            }
+        }
     }
-    &:first-child {
-      @media screen and (min-width: 992px) {
-        padding-left: 0 !important;
-      }
-    }
-  }
 }
 .inner-menu.desktop {
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.mobile-menu {
+    ul {
+        margin-bottom: 0;
+    }
+    a {
+        padding: 13px 9px !important;
+        display: inline-block;
+    }
 }

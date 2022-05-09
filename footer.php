@@ -18,29 +18,15 @@
                 <div class="row">
                     <div class="col-md-6 col-lg-4 py-2">
                         <h3>Eurolux</h3>
-                        <ul>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Demande de devis</a></li>
-                            <li><a href="">Catalogue</a></li>
-                        </ul>
+                        <?php wp_nav_menu( array( 'theme_location' => 'footer-menu-1') );  ?>
                     </div>
                     <div class="col-md-6 col-lg-4 py-2">
                         <h3>Eurolux Particulier</h3>
-                        <ul>
-                            <li><a href="">Mobilier</a></li>
-                            <li><a href="">Cuisine</a></li>
-                            <li><a href="">Catalogue</a></li>
-                            <li><a href="">Catalogue</a></li>
-                            <li><a href="">Catalogue</a></li>
-                        </ul>
+                        <?php wp_nav_menu( array( 'theme_location' => 'footer-menu-2') );  ?>
                     </div>
                     <div class="col-md-6 col-lg-4 py-2">
                         <h3>Eurolux Pro</h3>
-                        <ul>
-                            <li><a href="">Contact</a></li>
-                            <li><a href="">Demande de devis</a></li>
-                            <li><a href="">Catalogue</a></li>
-                        </ul>
+                        <?php wp_nav_menu( array( 'theme_location' => 'footer-menu-3') );  ?>
                     </div>
                 </div>
                 <hr />

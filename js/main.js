@@ -22,4 +22,11 @@ $(document).ready(function () {
     //   },
     // });
     $(".inner-menu").clone().removeClass("desktop").appendTo(".mobile-menu");
+
+    //adding active class to particular menu
+    let path = window.location.pathname;
+    $(".clean-list a").each(function (index, value) {
+        let className = $(this).attr("href").includes(path) ? "active" : "";
+        $(this).addClass(className);
+    });
 });

@@ -11,10 +11,12 @@ if ( ! defined( '_S_VERSION' ) ) {
 function eurolux_scripts() {
 	wp_enqueue_style( 'eurolux-bootstrap.min', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css' );
 	wp_enqueue_style( 'eurolux-font.awsome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css' );
+	wp_enqueue_style( 'eurolux-flightgallery', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.3/css/lightgallery.min.css' );
 	wp_enqueue_style( 'eurolux-style', get_template_directory_uri() . '/css/style.css', array(), _S_VERSION );
 
 	wp_enqueue_script( 'eurolux-jquery.min', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' );
 	wp_enqueue_script( 'eurolux-bootstrap.js', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js' );
+	wp_enqueue_script( 'eurolux-lightgallery', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.3/lightgallery.min.js' );
 	wp_enqueue_script( 'eurolux-main', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
 	
 	$translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );

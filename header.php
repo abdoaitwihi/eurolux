@@ -28,7 +28,9 @@
             <div class="d-flex align-items-center justify-content-between justify-content-md-center">
                 <!-- logo -->
                 <div class="text-center">
-                    <img style="filter: brightness(0.5)" src="<?php echo get_template_directory_uri() ?>/assets/icons/logo.svg" alt="" class="logo mt-3 mb-4" />
+                    <a href="<?php echo get_home_url() ?> ">
+                        <img style="filter: brightness(0.5)" src="<?php echo get_template_directory_uri() ?>/assets/icons/logo.svg" alt="" class="logo mt-3 mb-4" />
+                    </a>
                 </div>
                 <div>
                     <!-- mobile toggler -->
@@ -40,7 +42,7 @@
             <!-- menu -->
             <div class="outer-menu d-none d-md-block">
                 <div class="inner-menu desktop">
-                    <?php wp_nav_menu( array( 'theme_location' => 'Header menu') );  ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu') );  ?>
                 </div>
             </div>
         </header>
@@ -48,7 +50,7 @@
         <div class="d-md-none">
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
