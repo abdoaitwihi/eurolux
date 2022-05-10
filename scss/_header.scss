@@ -3,7 +3,9 @@ header {
     z-index: 3;
     width: 100%;
     .logo {
-        max-width: 200px;
+        max-width: 290px;
+        height: 72px;
+        padding-bottom: 12px;
     }
     padding: 12px 0;
 }
@@ -14,6 +16,8 @@ header {
 }
 .menu-toggler {
     color: $cDark;
+    font-size: 24px;
+    margin-bottom: 23px;
 }
 .inner-menu ul {
     list-style: none;
@@ -46,8 +50,17 @@ header {
     ul {
         margin-bottom: 0;
     }
-    a {
-        padding: 13px 9px !important;
-        display: inline-block;
+    li {
+        a {
+            padding: 13px 9px !important;
+            display: block;
+        }
+        // &:not(:last-child) {
+        border-bottom: solid 1px black;
+        margin-bottom: 32px;
+        // }
     }
+}
+.bb-0 {
+    border-bottom: unset;
 }

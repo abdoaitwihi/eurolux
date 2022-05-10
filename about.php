@@ -39,7 +39,7 @@ $workImages = explode(',' , get_field('work_images'));
                 <div class="col-md-6 p-0">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/bg-home.png" alt="" class="w-100 d-none d-md-block h-100 img-fluid" />
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 my-auto content-2">
                     <div class="p-5">
                     <?php echo get_field('content_2') ?> 
                     </div>

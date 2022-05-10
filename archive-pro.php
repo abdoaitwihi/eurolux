@@ -19,7 +19,7 @@ get_header();
             // Your loop code
             ?> 
 
-                <div class="container mt-5" id="<?php echo get_field('anchor') ?>" >
+                <div class="container my-2" id="<?php echo get_field('anchor') ?>" >
                     <h2 class="title2"><?php  the_title() ?> </h2>
                 </div>
 

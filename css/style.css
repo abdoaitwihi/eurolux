@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,400&display=swap");
 :root {
   /* headings */
   --h1-size: 40px;
@@ -45,8 +45,23 @@
 /* paragraphs */
 /* colors */
 /* buttons */
+@font-face {
+  font-family: "ATCArquette";
+  src: url("../assets/fonts/ATCArquette/ATCArquette-Black.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "ATCArquette regular";
+  src: url("../assets/fonts/ATCArquette/ATCArquette-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "ATCArquette meduim";
+  src: url("../assets/fonts/ATCArquette/ATCArquette-Medium.ttf") format("ttf");
+}
+
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "ATCArquette regular", sans-serif;
 }
 
 /* ========global in all projects */
@@ -219,6 +234,16 @@ body {
 .my-carousel .carousel-inner img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.my-carousel .carousel-caption {
+  right: 0;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  bottom: unset;
 }
 
 .section-title {
@@ -402,6 +427,12 @@ h1.section-title {
   height: 470px;
 }
 
+@media screen and (max-width: 992px) {
+  .carousel-banner {
+    height: 200px;
+  }
+}
+
 .title2 {
   position: relative;
   color: #b7935d;
@@ -446,6 +477,34 @@ h1.section-title {
   opacity: 1;
 }
 
+.home-page-carousel {
+  background-color: #1f1f1f;
+}
+
+.home-page-carousel h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 49px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 992px) {
+  .home-page-carousel h1 {
+    font-size: 26px;
+  }
+}
+
+.home-page-carousel img {
+  opacity: 0.8;
+}
+
+.content-2 p {
+  margin: 0;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 header {
   z-index: 3;
   width: 100%;
@@ -453,11 +512,15 @@ header {
 }
 
 header .logo {
-  max-width: 200px;
+  max-width: 290px;
+  height: 72px;
+  padding-bottom: 12px;
 }
 
 .menu-toggler {
   color: #1f1f1f;
+  font-size: 24px;
+  margin-bottom: 23px;
 }
 
 .inner-menu ul {
@@ -499,9 +562,18 @@ header .logo {
   margin-bottom: 0;
 }
 
-.mobile-menu a {
+.mobile-menu li {
+  border-bottom: solid 1px black;
+  margin-bottom: 32px;
+}
+
+.mobile-menu li a {
   padding: 13px 9px !important;
-  display: inline-block;
+  display: block;
+}
+
+.bb-0 {
+  border-bottom: unset;
 }
 
 .aw-form-group {
@@ -584,6 +656,7 @@ footer h3 {
   margin-bottom: 22px;
   font-weight: 500;
   font-size: 18px;
+  font-weight: bolder;
 }
 
 footer a {
@@ -605,6 +678,7 @@ footer .social-media a:not(:last-child) {
   color: #1f1f1f;
   padding: 10px 43px !important;
   border: none;
+  font-weight: bolder;
 }
 
 .card1 {
@@ -620,7 +694,7 @@ footer .social-media a:not(:last-child) {
   position: absolute;
   width: 100%;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.404);
+  background-color: rgba(255, 255, 255, 0.704);
   padding: 22px 12px;
   padding-right: 50px;
 }
@@ -633,6 +707,22 @@ footer .social-media a:not(:last-child) {
   font-size: 16px;
   text-transform: uppercase;
   color: #1f1f1f;
+  font-weight: bolder;
+}
+
+.card1 .stripe::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/icons/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .card1 img {
@@ -728,5 +818,11 @@ footer .social-media a:not(:last-child) {
   top: 0;
   width: 100%;
   min-height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .home-page-carousel-banner {
+    height: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

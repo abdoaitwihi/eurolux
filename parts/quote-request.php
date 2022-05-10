@@ -1,4 +1,4 @@
-<div class="container-fluid px-0 contact-section mt-5 bg-1">
+<div class="container-fluid px-0 contact-section mt-5 bg-1 overflow-x-hidden">
     <div class="row">
         <div class="col-md-6 left-contact-side"></div>
         <div class="col-md-6 py-5">

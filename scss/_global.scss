@@ -131,6 +131,14 @@ body {
     .carousel-inner img {
         object-fit: cover;
     }
+    .carousel-caption {
+        right: 0;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        bottom: unset;
+    }
 }
 .section-title {
     font-size: 32px;
@@ -268,6 +276,9 @@ h1.section-title {
 .carousel-banner {
     position: relative;
     height: 470px;
+    @media screen and (max-width: 992px) {
+        height: 200px;
+    }
 }
 .title2 {
     position: relative;
@@ -309,4 +320,28 @@ h1.section-title {
             }
         }
     }
+}
+
+.home-page-carousel {
+    background-color: $cDark;
+    h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 49px;
+        font-weight: 400;
+        @media screen and (max-width: 992px) {
+            font-size: 26px;
+        }
+    }
+    img {
+        opacity: 0.8;
+    }
+}
+.content-2 {
+    p {
+        margin: 0;
+    }
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
 }

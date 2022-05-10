@@ -9,3 +9,8 @@
     width: 100%;
     min-height: 100%;
 }
+.home-page-carousel-banner {
+    @media screen and (max-width: 992px) {
+        height: 200px;
+    }
+}
