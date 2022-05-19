@@ -13,7 +13,7 @@ $args = [
 
 
 <div class="container mt-5">
-    <h2 class="section-title mb-2 d-inline-block">Eurolux Pro</h2>
+    <h2 class="section-title mb-0 d-inline-block">Eurolux Pro</h2>
     <div class="row">
         <?php 
 

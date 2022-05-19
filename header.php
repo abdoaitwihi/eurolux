@@ -29,7 +29,7 @@
                 <!-- logo -->
                 <div class="text-center">
                     <a href="<?php echo get_home_url() ?> ">
-                        <img style="filter: brightness(0.5)" src="<?php echo get_template_directory_uri() ?>/assets/icons/logo.svg" alt="" class="logo mt-3 mb-4" />
+                        <img  src="<?php echo get_template_directory_uri() ?>/assets/icons/logo.svg" alt="" class="logo mt-3 mb-4" />
                     </a>
                 </div>
                 <div>

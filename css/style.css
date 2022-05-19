@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,300;1,400;1,500&display=swap");
 :root {
   /* headings */
   --h1-size: 40px;
@@ -45,23 +45,8 @@
 /* paragraphs */
 /* colors */
 /* buttons */
-@font-face {
-  font-family: "ATCArquette";
-  src: url("../assets/fonts/ATCArquette/ATCArquette-Black.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "ATCArquette regular";
-  src: url("../assets/fonts/ATCArquette/ATCArquette-Regular.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "ATCArquette meduim";
-  src: url("../assets/fonts/ATCArquette/ATCArquette-Medium.ttf") format("ttf");
-}
-
 body {
-  font-family: "ATCArquette regular", sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 /* ========global in all projects */
@@ -268,7 +253,13 @@ body {
 }
 
 .contact-section .left-contact-side {
-  background-image: url("../assets/images/bg-home.png");
+  background-image: url("https://dev.eurolux.ma/wp-content/uploads/2022/05/eurolux.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left-quote-side {
+  background-image: url("https://dev.eurolux.ma/wp-content/uploads/2022/05/2.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -402,7 +393,10 @@ h1.section-title {
 .mygallery-1 .item-4,
 .mygallery-1 .item-5,
 .mygallery-1 .item-8,
-.mygallery-1 .item-9 {
+.mygallery-1 .item-9,
+.mygallery-1 .item-12,
+.mygallery-1 .item-13,
+.mygallery-1 .item-16 {
   grid-column: span 2;
 }
 
@@ -485,6 +479,7 @@ h1.section-title {
   font-family: "Playfair Display", serif;
   font-size: 49px;
   font-weight: 400;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.88);
 }
 
 @media screen and (max-width: 992px) {
@@ -570,6 +565,7 @@ header .logo {
 .mobile-menu li a {
   padding: 13px 9px !important;
   display: block;
+  text-align: center;
 }
 
 .bb-0 {
@@ -707,7 +703,7 @@ footer .social-media a:not(:last-child) {
   font-size: 16px;
   text-transform: uppercase;
   color: #1f1f1f;
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 .card1 .stripe::after {
@@ -785,26 +781,50 @@ footer .social-media a:not(:last-child) {
           transform: scale(1.1);
 }
 
-.card2-outer:nth-of-type(3) .card2 {
+.card2-outer:nth-of-type(3),
+.card2-outer:nth-of-type(4) {
+  width: 100%;
+}
+
+.card2-outer:nth-of-type(3) .card2,
+.card2-outer:nth-of-type(4) .card2 {
   height: 160px !important;
 }
 
-.card2-outer:nth-of-type(3) .card2 .content {
+.card2-outer:nth-of-type(3) .card2 .content,
+.card2-outer:nth-of-type(4) .card2 .content {
   background: #00000046;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.card2-outer:nth-of-type(3) .card2 .content h2 {
-  margin: 0;
-  text-align: left;
+@media screen and (min-width: 992px) {
+  .card2-outer:nth-of-type(3) .card2 .content,
+  .card2-outer:nth-of-type(4) .card2 .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card2-outer:nth-of-type(3) .card2 .content h2,
+  .card2-outer:nth-of-type(4) .card2 .content h2 {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.card2-outer {
+  width: 50%;
+  margin-top: 22px;
+}
+
+@media screen and (max-width: 992px) {
+  .card2-outer {
+    width: 100%;
+  }
 }
 
 .home-banner {

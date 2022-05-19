@@ -1,6 +1,6 @@
 <div class="container-fluid px-0 contact-section mt-5 bg-1 overflow-x-hidden">
     <div class="row">
-        <div class="col-md-6 left-contact-side"></div>
+        <div class="col-md-6 left-quote-side"></div>
         <div class="col-md-6 py-5">
             <h2 class="text-center mb-4">Demande de devis</h2>
             <div class="primary-form px-3 px-md-5">

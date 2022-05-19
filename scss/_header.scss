@@ -1,66 +1,67 @@
 header {
-    // position: fixed;
-    z-index: 3;
-    width: 100%;
-    .logo {
-        max-width: 290px;
-        height: 72px;
-        padding-bottom: 12px;
-    }
-    padding: 12px 0;
+  // position: fixed;
+  z-index: 3;
+  width: 100%;
+  .logo {
+    max-width: 290px;
+    height: 72px;
+    padding-bottom: 12px;
+  }
+  padding: 12px 0;
 }
 .outer-menu {
-    .inner-menu {
-        // background-color: $cDark;
-    }
+  .inner-menu {
+    // background-color: $cDark;
+  }
 }
 .menu-toggler {
-    color: $cDark;
-    font-size: 24px;
-    margin-bottom: 23px;
+  color: $cDark;
+  font-size: 24px;
+  margin-bottom: 23px;
 }
 .inner-menu ul {
-    list-style: none;
-    padding: 0;
-    li a {
-        padding: 5px 12px;
-        color: $cDark;
-        text-transform: uppercase;
-        &:last-child {
-            @media screen and (min-width: 992px) {
-                padding-right: 0 !important;
-            }
-        }
-        &:first-child {
-            @media screen and (min-width: 992px) {
-                padding-left: 0 !important;
-            }
-        }
+  list-style: none;
+  padding: 0;
+  li a {
+    padding: 5px 12px;
+    color: $cDark;
+    text-transform: uppercase;
+    &:last-child {
+      @media screen and (min-width: 992px) {
+        padding-right: 0 !important;
+      }
     }
+    &:first-child {
+      @media screen and (min-width: 992px) {
+        padding-left: 0 !important;
+      }
+    }
+  }
 }
 .inner-menu.desktop {
-    ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .mobile-menu {
-    ul {
-        margin-bottom: 0;
+  ul {
+    margin-bottom: 0;
+  }
+  li {
+    a {
+      padding: 13px 9px !important;
+      display: block;
+      text-align: center;
     }
-    li {
-        a {
-            padding: 13px 9px !important;
-            display: block;
-        }
-        // &:not(:last-child) {
-        border-bottom: solid 1px black;
-        margin-bottom: 32px;
-        // }
-    }
+    // &:not(:last-child) {
+    border-bottom: solid 1px black;
+    margin-bottom: 32px;
+    // }
+  }
 }
 .bb-0 {
-    border-bottom: unset;
+  border-bottom: unset;
 }

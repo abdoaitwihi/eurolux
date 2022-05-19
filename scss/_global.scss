@@ -1,347 +1,356 @@
 /* ========global in all projects */
 h1 {
-    font-size: $h1S;
+   font-size: $h1S;
 }
 h2 {
-    font-size: $h2S;
+   font-size: $h2S;
 }
 h3 {
-    font-size: $h3S;
+   font-size: $h3S;
 }
 h4 {
-    font-size: $h4S;
+   font-size: $h4S;
 }
 h5 {
-    font-size: $h5S;
+   font-size: $h5S;
 }
 h6 {
-    font-size: $h6S;
+   font-size: $h6S;
 }
 .fs14 {
-    font-size: 14px;
+   font-size: 14px;
 }
 a {
-    text-decoration: none;
+   text-decoration: none;
 }
 a:hover {
-    text-decoration: none;
+   text-decoration: none;
 }
 .cursor-pointer {
-    cursor: pointer;
+   cursor: pointer;
 }
 .lighter {
-    opacity: 0.6;
+   opacity: 0.6;
 }
 .size-16 {
-    font-size: 16px;
+   font-size: 16px;
 }
 .size-14 {
-    font-size: 14px;
+   font-size: 14px;
 }
 .c-primary {
-    color: $cPrimary !important;
+   color: $cPrimary !important;
 }
 .c-secondary {
-    color: $cSecond;
+   color: $cSecond;
 }
 .c-dark {
-    color: $cDark;
+   color: $cDark;
 }
 .c-white {
-    color: white !important;
+   color: white !important;
 }
 
 *:focus {
-    outline: none !important;
-    transition: 0.3s;
+   outline: none !important;
+   transition: 0.3s;
 }
 .bold {
-    font-weight: bold;
+   font-weight: bold;
 }
 
 .fs16 {
-    font-size: 18px;
+   font-size: 18px;
 }
 .bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    object-fit: cover;
-    object-position: center;
-    &.big {
-        width: 150%;
-        left: -67px;
-    }
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 0;
+   object-fit: cover;
+   object-position: center;
+   &.big {
+      width: 150%;
+      left: -67px;
+   }
 }
 body {
-    overflow-x: hidden;
+   overflow-x: hidden;
 }
 .bg-white {
-    background-color: white;
+   background-color: white;
 }
 .semiBold {
-    font-weight: 600;
+   font-weight: 600;
 }
 .lh21 {
-    line-height: 21px;
+   line-height: 21px;
 }
 .lh18 {
-    line-height: 18px;
+   line-height: 18px;
 }
 .clean-btn {
-    border: none;
-    padding: 0;
-    background-color: transparent;
-    box-shadow: unset !important;
+   border: none;
+   padding: 0;
+   background-color: transparent;
+   box-shadow: unset !important;
 }
 .italic,
 .text-italic {
-    font-style: italic;
+   font-style: italic;
 }
 .mh-100vh {
-    min-height: 100vh;
+   min-height: 100vh;
 }
 
 .mw {
-    --w: 500;
-    max-width: calc(var(--w) * 1px);
+   --w: 500;
+   max-width: calc(var(--w) * 1px);
 }
 .c-light {
-    color: #727272 !important;
+   color: #727272 !important;
 }
 
 .padding-top-for-menu {
-    padding-top: 120px;
+   padding-top: 120px;
 }
 .font-light {
-    font-weight: 300;
+   font-weight: 300;
 }
 /* =======end of global in all projects ================ */
 .my-carousel {
-    height: 100%;
-    overflow: hidden;
-    .carousel-inner,
-    .carousel-item,
-    img {
-        height: 100%;
-    }
-    .carousel-inner img {
-        object-fit: cover;
-    }
-    .carousel-caption {
-        right: 0;
-        width: 100%;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        bottom: unset;
-    }
+   height: 100%;
+   overflow: hidden;
+   .carousel-inner,
+   .carousel-item,
+   img {
+      height: 100%;
+   }
+   .carousel-inner img {
+      object-fit: cover;
+   }
+   .carousel-caption {
+      right: 0;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      bottom: unset;
+   }
 }
 .section-title {
-    font-size: 32px;
-    color: $cDark;
-    margin: 0;
-    &::after {
-        content: "";
-        display: block;
-        width: 20%;
-        height: 1px;
-        background-color: $cDark;
-        opacity: 0.7;
-    }
-    @media screen and (max-width: 992px) {
-        font-size: 20px;
-    }
+   font-size: 32px;
+   color: $cDark;
+   margin: 0;
+   &::after {
+      content: "";
+      display: block;
+      width: 20%;
+      height: 1px;
+      background-color: $cDark;
+      opacity: 0.7;
+   }
+   @media screen and (max-width: 992px) {
+      font-size: 20px;
+   }
 }
 
 .contact-section {
-    .left-contact-side {
-        background-image: url("../assets/images/bg-home.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+   .left-contact-side {
+      background-image: url("https://dev.eurolux.ma/wp-content/uploads/2022/05/eurolux.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+}
+.left-quote-side {
+   background-image: url("https://dev.eurolux.ma/wp-content/uploads/2022/05/2.png");
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 body {
-    color: $cWhite;
+   color: $cWhite;
 }
 
 h1.section-title {
-    font-size: 32px;
-    text-transform: uppercase;
-    @media screen and (max-width: 992px) {
-        font-size: 20px;
-    }
+   font-size: 32px;
+   text-transform: uppercase;
+   @media screen and (max-width: 992px) {
+      font-size: 20px;
+   }
 }
 .page-content {
-    p {
-        color: $cDark;
-    }
+   p {
+      color: $cDark;
+   }
 }
 .bg-1 {
-    background: radial-gradient(42.92% 50% at 63.97% 50%, #2f3540 0%, #040506 100%);
+   background: radial-gradient(42.92% 50% at 63.97% 50%, #2f3540 0%, #040506 100%);
 }
 .mygallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 240px;
-    gap: 20px;
-    grid-template-areas:
-        "one one two three"
-        "one one four five"
-        "7 8 six six"
-        "9 10 six six";
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-auto-rows: 240px;
+   gap: 20px;
+   grid-template-areas:
+      "one one two three"
+      "one one four five"
+      "7 8 six six"
+      "9 10 six six";
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-        transition: 0.3s;
-        &:hover {
-            opacity: 0.8;
-        }
-    }
-    .item-1 {
-        grid-area: one;
-    }
-    .item-6 {
-        grid-area: six;
-    }
-    @media screen and (max-width: 992px) {
-        grid-template-areas: unset;
-        grid-template-columns: 1fr;
-        .item-1 {
-            grid-area: unset;
-        }
-        .item-6 {
-            grid-area: unset;
-        }
-    }
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: 0.3s;
+      &:hover {
+         opacity: 0.8;
+      }
+   }
+   .item-1 {
+      grid-area: one;
+   }
+   .item-6 {
+      grid-area: six;
+   }
+   @media screen and (max-width: 992px) {
+      grid-template-areas: unset;
+      grid-template-columns: 1fr;
+      .item-1 {
+         grid-area: unset;
+      }
+      .item-6 {
+         grid-area: unset;
+      }
+   }
 }
 
 .aw-grid-3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    @media screen and (max-width: 992px) {
-        grid-template-columns: 1fr;
-    }
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 20px;
+   @media screen and (max-width: 992px) {
+      grid-template-columns: 1fr;
+   }
 }
 .mygallery-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 300px;
-    gap: 15px;
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5px;
-        transition: 0.3s;
-        &:hover {
-            opacity: 0.8;
-        }
-    }
-    @media screen and (max-width: 992px) {
-        grid-template-columns: 1fr;
-        .grid-item {
-            grid-column: unset !important;
-        }
-    }
-    .item-1,
-    .item-4,
-    .item-5,
-    .item-8,
-    .item-9 {
-        grid-column: span 2;
-    }
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-auto-rows: 300px;
+   gap: 15px;
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: 0.3s;
+      &:hover {
+         opacity: 0.8;
+      }
+   }
+   @media screen and (max-width: 992px) {
+      grid-template-columns: 1fr;
+      .grid-item {
+         grid-column: unset !important;
+      }
+   }
+   .item-1,
+   .item-4,
+   .item-5,
+   .item-8,
+   .item-9,
+   .item-12,
+   .item-13,
+   .item-16 {
+      grid-column: span 2;
+   }
 }
 .title-with-span {
-    position: relative;
-    padding-bottom: 30px;
-    span {
-        position: absolute;
-        bottom: 0;
-        display: inline;
-        font-size: 18px;
-        font-style: italic;
-        left: 0;
-        font-weight: 400;
-        color: $cPrimary;
-    }
+   position: relative;
+   padding-bottom: 30px;
+   span {
+      position: absolute;
+      bottom: 0;
+      display: inline;
+      font-size: 18px;
+      font-style: italic;
+      left: 0;
+      font-weight: 400;
+      color: $cPrimary;
+   }
 }
 .carousel-banner {
-    position: relative;
-    height: 470px;
-    @media screen and (max-width: 992px) {
-        height: 200px;
-    }
+   position: relative;
+   height: 470px;
+   @media screen and (max-width: 992px) {
+      height: 200px;
+   }
 }
 .title2 {
-    position: relative;
-    color: $cPrimary;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 20px;
-    font-style: italic;
-    display: inline-block;
-    &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        background-color: $cPrimary;
-        width: 50%;
-        height: 1px;
-        bottom: 0px;
-        left: 0px;
-    }
+   position: relative;
+   color: $cPrimary;
+   text-transform: uppercase;
+   font-weight: 400;
+   font-size: 20px;
+   font-style: italic;
+   display: inline-block;
+   &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background-color: $cPrimary;
+      width: 50%;
+      height: 1px;
+      bottom: 0px;
+      left: 0px;
+   }
 }
 
 .clean-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    li {
-        display: inline-block;
-    }
-    &.cat-list {
-        li a {
-            padding: 12px 22px;
-            display: inline-block;
-            color: $cDark;
-            opacity: 0.8;
-            text-transform: uppercase;
-            &.active {
-                font-weight: 600;
-                opacity: 1;
-            }
-        }
-    }
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   li {
+      display: inline-block;
+   }
+   &.cat-list {
+      li a {
+         padding: 12px 22px;
+         display: inline-block;
+         color: $cDark;
+         opacity: 0.8;
+         text-transform: uppercase;
+         &.active {
+            font-weight: 600;
+            opacity: 1;
+         }
+      }
+   }
 }
 
 .home-page-carousel {
-    background-color: $cDark;
-    h1 {
-        font-family: "Playfair Display", serif;
-        font-size: 49px;
-        font-weight: 400;
-        @media screen and (max-width: 992px) {
-            font-size: 26px;
-        }
-    }
-    img {
-        opacity: 0.8;
-    }
+   background-color: $cDark;
+   h1 {
+      font-family: "Playfair Display", serif;
+      font-size: 49px;
+      font-weight: 400;
+      text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.88);
+      @media screen and (max-width: 992px) {
+         font-size: 26px;
+      }
+   }
+   img {
+      opacity: 0.8;
+   }
 }
 .content-2 {
-    p {
-        margin: 0;
-    }
+   p {
+      margin: 0;
+   }
 }
 
 .overflow-x-hidden {
-    overflow-x: hidden;
+   overflow-x: hidden;
 }

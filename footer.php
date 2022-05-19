@@ -39,9 +39,9 @@
                         Eurolux.
                     </div>
                     <div class="social-media">
-                        <a href=""> <i class="fab fa-facebook"></i> </a>
-                        <a href=""> <i class="fab fa-instagram"></i> </a>
-                        <a href=""> <i class="fab fa-linkedin"></i> </a>
+                        <a href="https://www.facebook.com/EuroluxMaroc-101508795795954"> <i class="fab fa-facebook"></i> </a>
+                        <a href="https://www.instagram.com/eurolux.maroc/"> <i class="fab fa-instagram"></i> </a>
+                        <a href="https://www.linkedin.com/company/79023345/admin/"> <i class="fab fa-linkedin"></i> </a>
                     </div>
                 </div>
             </div>
