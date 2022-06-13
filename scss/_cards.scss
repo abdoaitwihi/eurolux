@@ -82,7 +82,12 @@
    }
 }
 .card2-outer:nth-of-type(3),
-.card2-outer:nth-of-type(4) {
+.card2-outer:nth-of-type(4),
+.card2-outer:nth-of-type(5),
+.card2-outer:nth-of-type(6),
+.card2-outer:nth-of-type(7),
+.card2-outer:nth-of-type(8),
+.card2-outer:nth-of-type(9) {
    width: 100%;
    .card2 {
       height: 160px !important;

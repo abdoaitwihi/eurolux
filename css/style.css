@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,300;1,400;1,500&display=swap");
 :root {
   /* headings */
@@ -253,13 +254,13 @@ body {
 }
 
 .contact-section .left-contact-side {
-  background-image: url("https://dev.eurolux.ma/wp-content/uploads/2022/05/eurolux.png");
+  background-image: url("../assets/images/contact.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .left-quote-side {
-  background-image: url("https://dev.eurolux.ma/wp-content/uploads/2022/05/2.png");
+  background-image: url("../assets/images/devis.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -313,9 +314,7 @@ h1.section-title {
 
 .mygallery .item-1 {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: one;
 }
 
@@ -339,6 +338,30 @@ h1.section-title {
   .mygallery .item-6 {
     grid-area: unset;
   }
+}
+
+.simple_gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 240px;
+  gap: 20px;
+      grid-template-areas: "one 33 two three";
+}
+
+.simple_gallery img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.simple_gallery img:hover {
+  opacity: 0.8;
 }
 
 .aw-grid-3 {
@@ -498,6 +521,17 @@ h1.section-title {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.web-ticker {
+  padding: 0 15px;
+}
+
+.web-ticker img {
+  height: 140px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 12px;
 }
 
 header {
@@ -782,23 +816,43 @@ footer .social-media a:not(:last-child) {
 }
 
 .card2-outer:nth-of-type(3),
-.card2-outer:nth-of-type(4) {
+.card2-outer:nth-of-type(4),
+.card2-outer:nth-of-type(5),
+.card2-outer:nth-of-type(6),
+.card2-outer:nth-of-type(7),
+.card2-outer:nth-of-type(8),
+.card2-outer:nth-of-type(9) {
   width: 100%;
 }
 
 .card2-outer:nth-of-type(3) .card2,
-.card2-outer:nth-of-type(4) .card2 {
+.card2-outer:nth-of-type(4) .card2,
+.card2-outer:nth-of-type(5) .card2,
+.card2-outer:nth-of-type(6) .card2,
+.card2-outer:nth-of-type(7) .card2,
+.card2-outer:nth-of-type(8) .card2,
+.card2-outer:nth-of-type(9) .card2 {
   height: 160px !important;
 }
 
 .card2-outer:nth-of-type(3) .card2 .content,
-.card2-outer:nth-of-type(4) .card2 .content {
+.card2-outer:nth-of-type(4) .card2 .content,
+.card2-outer:nth-of-type(5) .card2 .content,
+.card2-outer:nth-of-type(6) .card2 .content,
+.card2-outer:nth-of-type(7) .card2 .content,
+.card2-outer:nth-of-type(8) .card2 .content,
+.card2-outer:nth-of-type(9) .card2 .content {
   background: #00000046;
 }
 
 @media screen and (min-width: 992px) {
   .card2-outer:nth-of-type(3) .card2 .content,
-  .card2-outer:nth-of-type(4) .card2 .content {
+  .card2-outer:nth-of-type(4) .card2 .content,
+  .card2-outer:nth-of-type(5) .card2 .content,
+  .card2-outer:nth-of-type(6) .card2 .content,
+  .card2-outer:nth-of-type(7) .card2 .content,
+  .card2-outer:nth-of-type(8) .card2 .content,
+  .card2-outer:nth-of-type(9) .card2 .content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -810,7 +864,12 @@ footer .social-media a:not(:last-child) {
             justify-content: space-between;
   }
   .card2-outer:nth-of-type(3) .card2 .content h2,
-  .card2-outer:nth-of-type(4) .card2 .content h2 {
+  .card2-outer:nth-of-type(4) .card2 .content h2,
+  .card2-outer:nth-of-type(5) .card2 .content h2,
+  .card2-outer:nth-of-type(6) .card2 .content h2,
+  .card2-outer:nth-of-type(7) .card2 .content h2,
+  .card2-outer:nth-of-type(8) .card2 .content h2,
+  .card2-outer:nth-of-type(9) .card2 .content h2 {
     margin: 0;
     text-align: left;
   }

@@ -11,12 +11,14 @@ get_header();
 
 <div class="container text-center">
     <h1 class="section-title d-inline-block mx-auto my-3">Eurolux pro</h1>
-</div>
+</div>      
 
 <?php 
     if ( have_posts() ) :
+        $index = 0;
         while ( have_posts() ) : the_post();
             // Your loop code
+            $index++;
             ?> 
 
                 <div class="container my-2" id="<?php echo get_field('anchor') ?>" >
@@ -25,7 +27,7 @@ get_header();
 
                 <?php 
                     $sliderImages = explode(','  , get_field('slider_images'));
-                    get_template_part( 'parts/slider-images' , '' , [ 'images' => $sliderImages] );
+                    get_template_part( 'parts/slider-images' , '' , [ 'images' => $sliderImages , 'carouselId' => $index ] );
                 ?>
                 <div class="container mb-5">
                     <div class="page-content mt-3">

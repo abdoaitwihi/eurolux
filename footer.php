@@ -12,8 +12,13 @@
 ?>
 
 
+<?php 
 
-<footer class="container-fluid px-0 py-4 mt-5">
+get_template_part('parts/logos-webticker');
+?>
+
+
+<footer class="container-fluid px-0 py-4 ">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-4 py-2">
@@ -47,6 +52,8 @@
             </div>
         </footer>
 <?php wp_footer(); ?>
+
+
 
 </body>
 </html>

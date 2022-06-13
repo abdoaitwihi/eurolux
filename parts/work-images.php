@@ -20,7 +20,7 @@ $images = array_map('trim', $images );
 
 
 <div class="container text-center">
-    <h2 class="section-title d-inline-block mx-auto mb-3 mt-5">Our work</h2>
+    <h2 class="section-title d-inline-block mx-auto mb-3 mt-5">Nos réalisations</h2>
 </div>
 <div class="container">
     <div id="lightgallery" class="mygallery">

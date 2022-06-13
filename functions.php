@@ -2,7 +2,7 @@
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	// define( '_S_VERSION', '1.0.0' );
-	define( '_S_VERSION', '3.0.0' );
+	define( '_S_VERSION', '4.0.0' );
 }
 
 /**
@@ -14,9 +14,11 @@ function eurolux_scripts() {
 	wp_enqueue_style( 'eurolux-flightgallery', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.3/css/lightgallery.min.css' );
 	wp_enqueue_style( 'eurolux-style', get_template_directory_uri() . '/css/style.css', array(), _S_VERSION );
 
-	wp_enqueue_script( 'eurolux-jquery.min', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' );
+	// wp_enqueue_script( 'eurolux-jquery.min', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js' );
+	wp_enqueue_script( 'eurolux-jquery.min', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js' );
 	wp_enqueue_script( 'eurolux-bootstrap.js', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js' );
 	wp_enqueue_script( 'eurolux-lightgallery', 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.3/lightgallery.min.js' );
+	wp_enqueue_script( 'eurolux-jquery-webticker', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.webticker/3.0.0/jquery.webticker.min.js' );
 	wp_enqueue_script( 'eurolux-main', get_template_directory_uri() . '/js/main.js', array(), _S_VERSION, true );
 	
 	$translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );
